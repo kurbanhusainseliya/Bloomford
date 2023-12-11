@@ -1,0 +1,133 @@
+.container{
+    .third_container{
+        .section3{
+            display: flex;
+            width: 100%;
+            @include max-media($xl){
+                 flex-wrap: wrap;
+                width: 100%;
+               } 
+               @include max-media($lg){
+                flex-wrap: wrap;
+                width: 100%;
+               }
+               @include max-media($md){
+                flex-wrap: wrap;
+                width: 100%;
+               }
+               @include max-media($sm){
+                flex-wrap: wrap;
+                width: 100%;
+               }
+               @include max-media($xs){
+                flex-wrap: wrap;
+                width: 100%;
+               }
+            .section3_texts{
+                padding: 0px 0px 0px 200px;
+                width: 40%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+                @include max-media($xl){
+                    width: 100%;
+                    padding: 0px 60px 0px 60px;
+                    order: 2;
+                   } 
+                   @include max-media($lg){
+                    width: 100%;
+                    padding: 0px 50px 0px 50px;
+                   }
+                   @include max-media($md){
+                    width: 100%;
+                    padding: 0px 40px 0px 40px ;
+                   }
+                   @include max-media($sm){
+                    width: 100%;
+                    padding: 0px 30px 0px 30px;
+                   }
+                   @include max-media($xs){
+                    width: 100%;
+                    padding: 0px 20px 0px 20px;
+                   }
+               
+                .section3_h1{
+                 font-family:$muli;
+                 font-size: 20px;
+                //  text-align: center;
+                 line-height: 72px;
+                 letter-spacing: 1px;
+                 color: #152b42;
+                 @include max-media($sm){
+                    font-size: 17px;
+                   }
+                @include max-media($xs){
+                  font-size: 15px;
+                   }
+                }
+                .section3_p{                   
+                font-family: $muli;
+                font-size: 15px;
+                line-height: 30px;
+                // text-align: center;
+                letter-spacing: 1px;
+                color: #555555;
+                padding: 80px 0px 80px 0px;
+                @include max-media($sm){
+                    padding-top:35px ;
+                    padding-bottom: 25px;
+                   }
+                @include max-media($xs){
+                    padding-top:30px ;
+                    padding-bottom: 25px;
+                   }
+                } 
+                .section3_btns{
+                    .section3_btn{
+                    padding: 15px 45px;
+                    border-radius: 5px;
+                    border: none;
+                    color: #FFFFFF  ;
+                    background-color:#6ADAF7;
+                    font-size: 14px;
+                    &:hover{
+                      background-color: #FF5056;
+                    }
+                    @include max-media($xs){
+                        padding: 15px 25px;
+                          }
+                    }
+                }
+            }
+            .section3_leptop_photos{
+                width: 60%;
+                @include max-media($xl){
+                  width: 100%;
+                  order: 1;
+                } 
+                @include max-media($lg){
+                    width: 100%;
+                }
+                @include max-media($md){
+                width: 100%;
+                }
+                @include max-media($sm){
+                    width: 100%;
+                }
+                @include max-media($xs){
+                    width: 100%;
+                }
+                .section3_leptop{
+                    // width: 100%;
+                    text-align: right;
+                  .section3_img{
+                    max-width: 100%;
+                    height: auto;
+                  }
+                }
+            }
+        }
+    }
+
+}

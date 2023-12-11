@@ -1,0 +1,221 @@
+.container{
+    .frist_container{
+       background-image: url("../img/first_con.png");
+        height: 1083px;
+        background-size: 75.5%;
+        background-repeat: no-repeat;
+        background-position: 999px -267px ;
+        overflow: hidden;
+        @include max-media($xxxl){
+         background-size: 75.5%;
+         background-position: 828px -170px ;
+        }
+        @include max-media($xxl){
+         background-size: 75.5%;
+         background-position: 652px -170px ;
+        }
+        @include max-media($xl){
+         background-size: 81.5%;
+         background-position: 530px -116px ;
+        } 
+        @include max-media($lg){
+         background-size: 99.5%;
+         background-position: 292px -168px;
+         height: 100%;
+        }
+        @include max-media($md){
+         background-size: 107.5%;
+         background-position: 173px -194px;
+        }
+        @include max-media($sm){
+         background-size: 129.5%;
+         background-position: 48px -132px ;
+        }
+        @include max-media($xs){
+         background-size: 128.5%;
+         background-position: 47px -127px ;
+        }
+        .section1{   
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            padding: 30px 0px ;
+            .section1_img{
+                width:10% ;
+                padding:50px 0px 0px 40px;
+                @include max-media($lg){
+                  display:none;
+                }
+                @include max-media($md){
+                  display:none;
+                }
+                @include max-media($sm){
+                 display: none;
+                }
+                @include max-media($xs){
+                display: none;
+                }
+                 .section1_mini_img{
+                   padding: 60px 0px 0px 0px;
+                }
+            }
+            .section1_text{
+               width:40% ;
+               font-family: $mulibold;
+               color: #152b42;
+               padding: 10px 0px 0px px;
+               // display: flex;
+               // flex-wrap: wrap;
+               @include max-media($lg){
+                  width: 100%;
+                  margin-left: auto;   
+                  margin-right: auto; 
+                  order: 2;
+                  }
+               @include max-media($md){
+                  width: 100%;
+                  margin-left: auto;   
+                  margin-right: auto;    
+                  }
+                 @include max-media($sm){
+                  width: 100%;
+                 }
+                 @include max-media($xs){
+                  width: 100%;
+                 }
+
+               .section1_h1{
+                  font-size: 47px;
+                  padding: 80px 0px 0px 0px;
+                  // animation: section_h1 1.5s linear ;
+                  // @keyframes section_h1 {
+                  //    0%{
+                  //          transform: translateY(-150px);
+                  //    }
+                  //    25%{
+                  //       transform: translateY(0px);
+                  //    }
+                  //    50%{
+                  //       transform: translateY(-60px);
+                  //    }
+                  //    75%{
+                  //       transform: translateY(0px);
+                  //    }
+                  // }
+                  @include max-media($lg){
+                   font-size: 35px;
+                   text-align: center;
+                   width: 100%;
+                  }
+                  @include max-media($md){
+                     font-size: 35px;
+                     text-align: center;
+                     width: 100%;
+                  }
+                  @include max-media($sm){
+                     font-size: 32px;
+                     text-align: center;
+                     width: 100%;
+                  }
+                  @include max-media($xs){
+                     font-size: 28px;
+                     text-align: center;
+                     width: 100%;
+                     padding: 25px;
+                  }
+               }
+               .section1_p{
+                font-family: $muli;
+                font-size: 18px;
+                line-height: 30px;
+                font-style: normal;
+                letter-spacing: 1px;
+                color: #555555;
+                padding: 65px 0px 0px 0px;
+                @include max-media($lg){
+                   font-size:13px ;
+                   padding: 50px;
+                }
+                @include max-media($md){
+                  font-size:15px ;
+                  padding: 30px;
+                }
+                @include max-media($sm){
+                  font-size:14px ;
+                  padding: 30px;
+                }
+                @include max-media($xs){
+                  font-size:14px ;
+                  padding: 30px;
+                }
+               }
+               .section1_btns{
+                  @include max-media($lg){
+                     text-align: center;
+                     width: 100%;
+                  }
+                  @include max-media($md){
+                     text-align: center;
+                     width: 100%;
+                  }
+                  @include max-media($sm){
+                     text-align: center;
+                     width: 100%;
+                  }
+                  @include max-media($xs){
+                     text-align: center;
+                     width: 100%;
+                  }
+               .section1_btn{            
+                margin: 65px 0px 0px 0px;
+                padding: 15px 45px;
+                border-radius: 5px;
+                border: none;
+                color: #FFFFFF  ;
+                background-color: #6ADAF7;
+                &:hover{
+                   background-color: #FF5056;
+                 }              
+               }
+            }
+            }
+            .section1_leptop_photo{
+               width:50%;
+               @include max-media($lg){
+                  width: 100%;
+                  order: 1;
+                }  
+               @include max-media($md){
+                    width: 100%;
+                 }
+                 @include max-media($sm){
+                  width: 100%;
+                 }
+                 @include max-media($xs){
+                   width: 100%;
+                 }
+               .section1_leptop_img{
+                   margin: 80px 0px 0px -10px;
+                   max-width: 100%;
+               }
+               .section1_mouse_img{
+                  @include max-media($xl){
+                   display: none;
+                  }
+                  @include max-media($lg){
+                     display: none;
+                  }
+                  @include max-media($md){
+                     display: none;
+                  }
+                  @include max-media($sm){
+                     display: none;
+                  }
+                  @include max-media($xs){
+                     display: none;
+                  }
+               }
+            }
+        }
+    }
+} 

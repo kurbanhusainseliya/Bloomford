@@ -1,0 +1,80 @@
+.container{
+    .fourth_container{
+        background-image: url("../img/Path1913.png");
+        // height: 922px;
+        height: 100%;
+        background-size: 69.5%;
+        background-repeat: no-repeat;
+        background-position: -727px -159px;
+        overflow: hidden;
+         @include max-media($xxl){
+            background-size: 110.5%;
+            background-position: -712px -159px;
+        }
+        @include max-media($xl){
+            background-size: 131.5%;
+            background-position: -708px -159px;
+        } 
+        .section4{    
+            .section4_blook{
+                display: flex;
+                justify-content: center;
+                padding: 125px 15px ;
+                @include max-media($lg){
+                    flex-wrap: wrap;
+                    width: 100%;
+                   }
+                   @include max-media($md){
+                    flex-wrap: wrap;
+                    width: 100%;
+                   }
+                   @include max-media($sm){
+                    flex-wrap: wrap;
+                    width: 100%;
+                   }
+                   @include max-media($xs){
+                    flex-wrap: wrap;
+                    width: 100%;
+                   }
+            .section4_leptop_img{
+                width: 494px;
+                height: 623px;
+                border-radius: 10px;
+                filter: drop-shadow(12px 12px 30px rgba(132, 132, 132, 0.16));
+                background: #ffffff;
+                margin: 20px;
+                padding: 20px;
+                @include max-media($xl){
+                    padding: 0px;
+                  } 
+                 
+                .section4_img{
+                   display: block;
+                   margin: auto;
+                }
+                .section4_texts{
+                    .section4_h1{
+                        font-family: $muli;
+                        font-size: 29px;
+                        font-weight: normal;
+                        line-height: 46px;
+                        text-align: center;
+                        letter-spacing: 1px;
+                        color: #152b42;
+                        margin-top: 30px;
+                    }
+                    .section4_p{
+                        font-family: $muli;
+                        font-size: 18px;
+                        font-weight: normal;
+                        font-style: normal;
+                        text-align: center;
+                        color: #555555;
+                        margin: 56px 56px 0px 56px;
+                    }
+                }
+            }
+          }
+        }
+    }
+}

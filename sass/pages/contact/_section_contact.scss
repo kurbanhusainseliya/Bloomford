@@ -1,0 +1,132 @@
+.container{
+    width: 100%;
+    height: auto;
+    section{
+       .main_section{
+         .section_part{
+            width: 100%;
+                height: auto;
+                display: flex;
+                flex-wrap: wrap;
+           .section_img{
+            width: 10%;
+            padding:50px 0px 0px 40px;
+            @include max-media($xxl){
+                display: none;
+                padding-top: 0;
+            }
+            .section1_mini_img{
+                padding: 60px 0px 0px 0px;
+             }
+           }
+           .left_section{
+            width: 40%;
+            padding-top: 60px;
+             @include max-media($xxl){
+               width: 100%;
+            }
+            img{
+                max-width: 100%;
+                @include max-media($xxl){
+                   text-align: center;
+                 }
+            }
+           }
+           .right_section{
+            width: 780px;
+            padding: 70px;
+            padding-right: 37px;
+            @include max-media($xxl){
+                width: 100%;
+             }
+           
+          
+            .section_p_part{
+                .section_p{
+                    font-size: 23px;
+                     color: #555555;
+                      line-height: 40px;
+                      font-family: $muli;
+                }
+            }
+            .section_form{
+                width: auto;
+                height: 620px;
+                margin-top: 30px;
+               .form{
+                form{
+                .text,  .no, .email, .textarea{
+                    font-family: $muli;
+                    width: 49%;
+                    padding: 20px;
+                    border: none;
+                    border-radius: 4px;
+                    margin-top: 6px;
+                    margin-bottom: 16px;
+                    resize: vertical;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+                    @include max-media($sm) {
+                        width: 100%;
+                        display: block;
+                    }
+                    &:focus{
+                        
+                        background-color: #D5FFE4;
+                    }
+                }
+                .btn{
+                    margin-top: 50px;
+                    background-color: #6ADAF7;
+                    border: none;
+                    border-radius: 8px;
+                    color: white;
+                    padding: 25px 72px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 20px; 
+                    font-family: $muli;
+                    cursor: pointer;
+                    
+                    @include max-media($sm) {
+                        width: 100%;
+                        display: block;
+                    }
+                    &:hover {
+                        background-color: red;
+                    }
+                    img{
+                        padding-left:10px;
+                    }
+                  }
+                }
+              }
+            }
+           }
+           .side_contact{
+            margin-top: 250px;
+            margin-left: 80px;
+            height: 400px;
+            text-orientation: rightleft;
+            writing-mode: vertical-lr;
+            @include max-media(1670px){
+                display: none;
+            }
+            .mail{
+                text-decoration: none;
+                font-family: Muli;
+                font-size: 14px;
+                color: #555555;
+            }
+            .tel{
+                margin-top: 50px;
+                text-decoration: none;
+                font-family: Muli;
+                font-size: 14px;
+                color: #555555;
+            }
+           }
+         }
+       }
+    }
+}

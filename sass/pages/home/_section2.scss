@@ -1,0 +1,225 @@
+.container{
+    .second_container{
+        background-image: url("../img/Path1493.png");
+        height: 1212px;
+        background-size: 54.5%;
+        background-repeat: no-repeat;
+        background-position: -303px 19px;
+        overflow: hidden;
+        @include max-media($xl){
+            height: 100%;
+        } 
+        
+        .section2{
+            display: flex;
+            width: 100%;
+            @include max-media($xl){
+                display: block;
+                height: 100%;
+                text-align: center;
+            } 
+        
+            .section2_leptops_photos{
+                padding: 87px 0px 0px 0px;
+                width: 55%;
+                @include max-media($xl){
+                    width: 100%;
+                } 
+            
+            }
+            .section2_text{
+               width: 45%;
+                position: relative;
+                @include max-media($xl){
+                    width: 100%;
+                } 
+                .section2_h1{
+                 font-family: $mulibold;
+                 font-size: 40px;
+                 margin: 0px 0px 100px 0px;
+                //  animation: section2_h1 1s linear 
+                //  @keyframes section2_h1 {
+                //     0%{
+                //           transform: translateY(-90px);
+                //     }
+                //     100%{
+                //        transform: translateY(0px);
+                //     }
+                //  }
+                 @include max-media($lg){
+                    font-size: 30px;
+                    margin: 17px 0px 49px 0px;
+                 }
+                 @include max-media($md){
+                    font-size: 25px;
+                    margin: 17px 0px 49px 0px;
+                 }
+                 @include max-media($sm){
+                    font-size: 23px;
+                    margin: 17px 0px 49px 0px;
+                 }
+                 @include max-media($xs){
+                    font-size: 19px;
+                    margin: 17px 0px 49px 0px;
+                 }
+                }
+                .section2_p{
+                    padding: 20px;
+                    @include max-media($xl){
+                        padding: 0px 100px 20px 100px;
+                    } 
+                    @include max-media($md){
+                        padding: 0px 50px 20px 50px;
+                    }
+                    @include max-media($sm){
+                        padding: 0px 50px 20px 50px;
+                    }
+                    @include max-media($xs){
+                    
+                    }
+                .section2_text_flex1{
+                    display: flex;
+                    width: auto;
+                    justify-content: right;
+                    width: 600px;
+                    padding: 0px 40px 0px 0px;
+                    @include max-media($xxl){
+                        padding: 0px 77px 0px 0px;
+                    } 
+                    @include max-media($xl){
+                       width: 100%;
+                    } 
+                    @include max-media($sm){
+                        padding: 0px 0px 0px 0px;
+                    }
+                    .number1{
+                            width: 81px;
+                            height: 160px;
+                            font-family:$mulibold;
+                            font-size: 143px;
+                            text-align: left;
+                            color: #f2f2f2;
+                            position: absolute;
+                            z-index: -1;
+                            margin:-40px 0px 0px 468px;
+                    }
+                    .section2_p_text{
+                      padding: 40px 0px 50px 0px;
+                      font-family: $muli ;
+                      font-size: 17px;
+                      text-align: left;
+                      letter-spacing: 1px;
+                      color: #555555;   
+                      position: relative;    
+
+                       }
+             }
+
+                .section2_text_flex2{
+                    display: flex;
+                    width: auto;
+                    }
+                .number2{
+                    width: 81px;
+                    height: 160px;
+                    font-family:$mulibold;
+                    font-size: 143px;
+                    text-align: left;
+                    color: #f2f2f2;
+                    position: absolute;
+                    z-index: -1;
+                    margin:26px 0px 0px 111px;
+                    @include max-media($sm){
+                        margin: -13px 0px 0px 19px;
+                                        }
+                }
+               .section2_p_text_space{
+                padding: 40px 0px 50px 153px;
+                font-family: $muli ;
+                font-size: 17px;
+                text-align: left;
+                letter-spacing: 1px;
+                color: #555555;
+                @include max-media($sm){
+                    padding: 40px 0px 50px 50px;
+                }
+             }
+
+                    .section2_text_flex3{
+                    display: flex;
+                    width: auto;
+                    justify-content: right;
+                    width: 600px; 
+                    padding: 0px 40px 0px 0px;
+                    @include max-media($xxl){
+                        padding: 0px 77px 0px 0px;
+                    } 
+                    @include max-media($xl){
+                       width: 100%;
+                    } 
+                
+                    @include max-media($sm){
+                        padding: 0px 0px 0px 0px;
+                    }
+                   
+                    .number3{
+                            // width: 81px;
+                            // height: 160px;
+                            font-family:$mulibold;
+                            font-size: 143px;
+                            // text-align: left;
+                            color: #f2f2f2;
+                            position: absolute;
+                            z-index: -1;
+                            // margin:-40px 0px 0px 468px;
+                    }
+                    .section2_p_text{
+                      padding: 40px 0px 50px 0px;
+                      font-family: $muli ;
+                      font-size: 17px;
+                      text-align: left;
+                      letter-spacing: 1px;
+                      color: #555555;   
+
+                       }
+             }
+
+                       .section2_text_flex4{
+                    display: flex;
+                    width: auto;
+                      
+                .number4{
+                    width: 81px;
+                    height: 160px;
+                    font-family:$mulibold;
+                    font-size: 143px;
+                    text-align: left;
+                    color: #f2f2f2;
+                    position: absolute;
+                    z-index: -1;
+                    margin:26px 0px 0px 111px;
+                    @include max-media($sm){
+                        margin: -13px 0px 0px 19px;
+                                        }
+                    @include max-media($xs){
+                    
+                   }
+                }
+               .section2_p_text_space{
+                padding: 40px 0px 50px 153px;
+                font-family: $muli ;
+                font-size: 17px;
+                text-align: left;
+                letter-spacing: 1px;
+                color: #555555;
+                @include max-media($sm){
+                    padding: 40px 0px 50px 50px;
+                }
+               
+               }
+             }
+            }
+            }
+        }
+    }
+}

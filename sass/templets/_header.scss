@@ -1,0 +1,92 @@
+.container{
+    .nav{
+         display: flex;
+         width: 100%;
+         .nav_section1{
+            width: 10%;
+            padding: 40px; 
+          }
+          .nav_section2{
+           width:  40%;
+           padding: 40px 40px 40px 0px;
+           @include max-media($xl){
+              text-align: right;
+           } 
+           @include max-media($lg){
+            text-align: right;
+            width: 80%;
+           }
+           @include max-media($md){
+            text-align: right;
+            width: 80%;
+           }
+           @include max-media($sm){
+            padding: 40px 0px 40px 0px;    
+           }
+           @include max-media($xs){
+           float: left;
+           }
+          }
+      .nav_section3{
+        width: 50%;
+        display: flex;
+        justify-content:end;
+        padding: 40px 100px 40px 0px;
+        @include max-media($xl){
+          padding: 40px 21px 40px 0px;
+          width: 76%;
+         } 
+         @include max-media($lg){
+          display: none;
+         }
+         @include max-media($md){
+          display: none;
+         }
+         @include max-media($sm){
+          display: none;
+
+         }
+         @include max-media($xs){
+          display: none;
+         }
+        .img151{
+            margin-top: -10px;
+            @include max-media($lg){
+             display: none;
+             }
+             @include max-media($md){
+             display: none;
+             }
+             @include max-media($sm){
+             display: none;
+    
+             }
+             @include max-media($xs){
+             display: none
+             }
+         }
+        .nav_btn1{
+          padding: 15px 45px;
+          margin-left: 45px;
+          border-radius: 5px;
+          border: none;
+          color: #FFFFFF  ;
+          background-color: #6ADAF7;
+          &:hover{
+            background-color: #FF5056;
+          } 
+        }
+        .nav_btn2{
+          padding: 15px 45px;
+          margin-left: 45px;
+          border-radius: 5px;
+          border: none;
+          color: #FFFFFF  ;
+          background-color: #FF5056;
+          &:hover{
+            background-color:#6ADAF7;
+          }
+        }
+      }
+    }
+}

@@ -1,0 +1,84 @@
+.container{
+    .Fifth_container{
+        .section5{
+            display: flex;
+            width: 100%;
+            @include max-media($lg){
+                flex-wrap: wrap;
+                width: 100%;
+              }
+            .section5_texts{
+                width: 50%;
+                margin-top: auto;
+                margin-bottom: auto;
+                padding: 0px 0px 0px 200px;
+           
+                @include max-media($lg){
+                 width: 100%;
+                 order: 2;
+                }
+                @include max-media($md){
+                    padding: 0px 0px 0px 100px;
+                    margin-top: 20px;
+                }
+                @include max-media($sm){
+                    padding: 0px 0px 0px 50px;
+                }
+                @include max-media($xs){
+                    padding: 0px 0px 0px 25px;
+                }
+                .section5_p{
+                    font-size: 26px;
+                    color: #152b42;
+                    font-family:$mulibold;
+                    letter-spacing: 1px;
+                    @include max-media($xs){
+                        font-size: 25px;
+                      }
+                }
+                .section5_h1{
+                    font-family: $muli;
+                    font-size: 20px;
+                    color: #152b42;
+                    letter-spacing: 1px;
+                    margin-top: 25px;
+                    margin-bottom: 65px;
+                    @include max-media($xs){
+                      font-size: 16px;
+                    }
+                }
+                .section5_btns{
+                    .section5_btn{
+                        padding: 15px 45px;
+                        border-radius: 5px;
+                        border: none;
+                        color: #FFFFFF  ;
+                        background-color:#6ADAF7;
+                        font-size: 14px;
+                        
+                        &:hover{
+                          background-color: #FF5056;
+                        }
+                        @include max-media($xs){
+                            padding: 15px 20px;
+                          }
+                    }
+                }
+            }
+            .section5_leptop_photos{
+                width: 50%;
+                @include max-media($lg){
+                 width: 100%;
+                 order: 1;
+                }
+                .section5_leptop{
+                    text-align: right;
+                    .section5_img{
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
